@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/flikr-ui/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/flikr-ui/static/js/main.fd5bdef3.chunk.js",
+    "main.js.map": "/flikr-ui/static/js/main.fd5bdef3.chunk.js.map",
+    "runtime-main.js": "/flikr-ui/static/js/runtime-main.4ffc07ae.js",
+    "runtime-main.js.map": "/flikr-ui/static/js/runtime-main.4ffc07ae.js.map",
+    "static/js/2.06cba6d2.chunk.js": "/flikr-ui/static/js/2.06cba6d2.chunk.js",
+    "static/js/2.06cba6d2.chunk.js.map": "/flikr-ui/static/js/2.06cba6d2.chunk.js.map",
+    "static/js/3.39fabae1.chunk.js": "/flikr-ui/static/js/3.39fabae1.chunk.js",
+    "static/js/3.39fabae1.chunk.js.map": "/flikr-ui/static/js/3.39fabae1.chunk.js.map",
+    "index.html": "/flikr-ui/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/flikr-ui/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.06cba6d2.chunk.js.LICENSE.txt": "/flikr-ui/static/js/2.06cba6d2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ffc07ae.js",
+    "static/js/2.06cba6d2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.fd5bdef3.chunk.js"
+  ]
+}
