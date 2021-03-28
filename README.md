@@ -4,7 +4,7 @@ App Created with Create-React-App
 
 Tech Stack:
 > React
-> Redux
+> Redux (Thunk)
 > Typescript
 > Docker
 
