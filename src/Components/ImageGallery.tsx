@@ -3,14 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { getImages, nextPage } from "../Store/Actions/Actions";
 import { ImageState } from "../Store/State/State";
-import { Gallery, Loading } from "../Styles";
+import { Gallery, Scroll } from "../Styles";
 import Card from "./Card";
 
 const ImageGallery = () => {
    const dispatch = useDispatch();
 
    const images = useSelector((state: ImageState) => state.flikrImages);
-   const isError = useSelector((state: ImageState) => state.error);
    const page = useSelector((state: ImageState) => state.page);
    const tag = useSelector((state: ImageState) => state.tag);
 
@@ -50,23 +49,20 @@ const ImageGallery = () => {
    return (
       <>
          {images && (
-            <InfiniteScroll
-               dataLength={images.length}
-               next={getNewPage}
-               hasMore={true}
-               loader={
-                  isError ? (
-                     <Loading>{isError}</Loading>
-                  ) : (
-                     <Loading>Loading...</Loading>
-                  )
-               }
-               endMessage={
-                  <p style={{ textAlign: "center" }}>That's All For Now!</p>
-               }
-            >
-               <Gallery>{card}</Gallery>
-            </InfiniteScroll>
+            <Gallery>
+               <InfiniteScroll
+                  dataLength={images.length}
+                  next={getNewPage}
+                  hasMore={true}
+                  style={{ display: "flex", flexDirection: "column-reverse" }}
+                  loader={""}
+                  endMessage={
+                     <p style={{ textAlign: "center" }}>That's All For Now!</p>
+                  }
+               >
+                  <Scroll>{card}</Scroll>
+               </InfiniteScroll>
+            </Gallery>
          )}
       </>
    );

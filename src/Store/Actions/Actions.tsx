@@ -26,7 +26,7 @@ export const getImages = (
    dispatch({ type: LOAD_IMAGES_PENDING });
    const getPage = page;
 
-   const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${tag}&privacy_filter=1&safe_search=1&extras=description%2C+owner_name%2C+tags&per_page=21&page=${getPage}&format=json&nojsoncallback=1`;
+   const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${tag}&privacy_filter=1&safe_search=1&extras=description%2C+owner_name%2C+tags&per_page=30&page=${getPage}&format=json&nojsoncallback=1`;
 
    await axios.get(url).then((data) => {
       if (data.data.stat === "fail") {

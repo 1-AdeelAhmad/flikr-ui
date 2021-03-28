@@ -1,10 +1,15 @@
 import * as React from "react";
-import { AppBar, Title } from "../Styles";
+import { AppBar, Button, Title } from "../Styles";
 
-const TitleBar = () => {
+export interface AppBarProps {
+   toggleTheme: () => void;
+}
+
+const TitleBar = ({ toggleTheme }: AppBarProps) => {
    return (
       <AppBar>
          <Title>Flikr Photo Stream</Title>
+         <Button onClick={toggleTheme}>Toggle Dark Mode</Button>
       </AppBar>
    );
 };
