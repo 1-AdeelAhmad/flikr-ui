@@ -28,3 +28,4 @@ Tech Stack:
 
 > If you have Docker already set up docker: 
 > run --name flikr-ui -p 4680:3000 -d iamadeel/flikr-ui
+> Goto localhost:4680 to view
