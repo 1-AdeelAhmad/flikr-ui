@@ -24,5 +24,7 @@ Tech Stack:
 > https://hub.docker.com/r/iamadeel/flikr-ui - Link To Docker Image
 > docker pull iamadeel/flikr-ui - Docker Pull Command
 > https://docs.docker.com/get-docker/ - How to Set Up Docker 
+
+
 > If you have Docker already set up docker: 
 > run --name flikr-ui -p 4680:3000 -d iamadeel/flikr-ui
